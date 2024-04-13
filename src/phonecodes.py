@@ -161,7 +161,7 @@ def ipa2arpabet(x,language):
     '''Convert IPA symbols to ARPABET'''
     (il,ttf)=translate_string(x,phonecode_tables._ipa2arpabet)
     ol=attach_tones_to_vowels(il,'012',phonecode_tables._arpabet_vowels,1,1)
-    return(''.join(ol))
+    return(' '.join(ol))
 
 def timit2ipa(x,L):
     '''Convert TIMIT phone codes to IPA'''
